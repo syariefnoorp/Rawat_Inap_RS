@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Check_In.TambahMasukActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Data Check-In"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:id="@+id/judul"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNik"
+        android:layout_below="@+id/judul"
+        android:layout_margin="20dp"
+        android:hint="NIK"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNama"
+        android:layout_below="@+id/inputNik"
+        android:layout_margin="20dp"
+        android:hint="Nama"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputUmur"
+        android:layout_below="@+id/inputNama"
+        android:layout_margin="20dp"
+        android:hint="Umur"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPenyakit"
+        android:layout_below="@+id/inputUmur"
+        android:layout_margin="20dp"
+        android:hint="Penyakit"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/inputPenyakit"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:text="submit"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn"
+            android:textColor="#FFF"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:text="Back"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

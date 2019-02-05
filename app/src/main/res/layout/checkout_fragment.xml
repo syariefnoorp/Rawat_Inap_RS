@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/search"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="Cari Nama..."
+            android:id="@+id/inputSearch"
+            android:backgroundTint="@color/colorPrimary"
+            android:textCursorDrawable="@null"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/btnCari"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/btnReset"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Tambah Data"
+        android:id="@+id/btnTambah"
+        android:background="@drawable/btn"
+        android:textColor="#FFF"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTambah"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:id="@+id/listKeluar"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
